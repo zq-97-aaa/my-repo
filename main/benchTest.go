@@ -71,8 +71,9 @@ func main() {
 
 func TestForLoop() {
 	//LoadPromptDataAsync()
-
 	//user := users[rand.Intn(1000)]
+	//FilterPromptList(tmp, promptDataList, false)
+	//fmt.Println("--->promptListLength:", len(promptDataList))
 	for _, user := range users[:100] {
 		wg.Add(1)
 		tmp := user
@@ -88,6 +89,10 @@ func TestForLoop() {
 
 func TestQuery() {
 	//user := users[rand.Intn(1000)]
+	//_, err := FilterPromptList2(tmp, nil)
+	//			if err != nil {
+	//				return
+	//			}
 	for _, user := range users[:100] {
 		wg.Add(1)
 		tmp := user
